@@ -1,4 +1,4 @@
-##Hello_Jenkins
+##hello-jenkins
 This simple exercise is designed to introduce you to Jenkins and continuous
 integration. This will be done in teams of 5 but we will all be working on one
 Jenkins server.
@@ -30,7 +30,7 @@ _If there is an error or you can't see your commit in Github after refreshing
 then let me know._
 
 ####Setting up a Job in Jenkins
-![Jenkins Landing Page](/img/jenkins_landing.png)
+![Jenkins Landing Page](img/jenkins_landing.png)
 
 1. Navtigate to [Jenkins](jenkins.chico.liatr.io).
 2. Click _New Item_.
@@ -47,7 +47,7 @@ then let me know._
 7. Click _Save_.
 
 ####Set up _Embedded Build Status_ for Repo
-![Build status badge](/img/jenkins_badge.png)
+![Build status badge](img/jenkins_badge.png)
 
 The build status symbol often seen on a Github repository is normally connected
 to TravisCI or JenkinsCI. We are using JenkinsCI which requires a plugin called
@@ -88,7 +88,7 @@ Deployment. The point of this is to show downstream/upstream job relationships._
   1. After that successfully builds go and check your second job.
   2. You should see it successfully run.
   3. Select a Build Job from History and go to the console log to see your program output. If you program has run there then you successfully set up a basic pipeline.
-![Job history](/img/jenkins_history.png)
+![Job history](img/jenkins_history.png)
 
 ###Wrapping it up
 As you can see, Jenkins has a ton of opportunity which makes it the leading CI
