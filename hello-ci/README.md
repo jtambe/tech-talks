@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.com/shanemacbride/techTalk17.svg?token=vjqBpF5Ke4q3CszpjJsP&branch=master)](https://travis-ci.com/shanemacbride/techTalk17)  
-# techTalk17
+# hello-ci
 Chico Tech. Talk 2017
   
   Overview:  
