@@ -15,7 +15,9 @@ Chico Tech. Talk 2017
 Create a fork of the [liatrio/dromedary repo](http://github.com/liatrio/dromedary.git) on github, and clone it to your local machine.
 
 #### Set up your environment
-Java must be installed on your machine to run DynamoDB Local can run. This is the database that our app relies upon.
+Java must be installed on your machine to run DynamoDB Local can run. This is the database that our app relies upon.  
+  
+Ensure that you have [Node JS](https://nodejs.org/en/download/) installed as well.
 
 Install Dependencies by running `npm install` in project's root directory.
 
