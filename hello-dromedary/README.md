@@ -168,26 +168,26 @@ heroku create app_name
 
 ```
 var chartData = {
-values: {
-darkblue: {
-  label: 'DarkBlue',
-  value: 10,
-  color:'#000066',
-  highlight: '#6F6F6F'
-},
-red: {
-  label: 'Red',
-  value: 10,
-  color: '#CC0000',
-  highlight: '#C9DF6E'
-},
-yellow: {
-  label: 'Yellow',
-  value: 10,
-  color:'#FF9900',
-  highlight: '#FFB75E'
-}
-}
+  values: {
+    darkblue: {
+      label: 'DarkBlue',
+      value: 10,
+      color:'#000066',
+      highlight: '#6F6F6F'
+    },
+    red: {
+      label: 'Red',
+      value: 10,
+      color: '#CC0000',
+      highlight: '#C9DF6E'
+    },
+    yellow: {
+      label: 'Yellow',
+      value: 10,
+      color:'#FF9900',
+      highlight: '#FFB75E'
+    }
+  }
 };
 ```
   Now commit and push the changes so Travis will build and deploy the update.
