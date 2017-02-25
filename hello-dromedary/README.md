@@ -67,7 +67,7 @@ To run unit tests, execute the test task: `gulp test`
   The following will install Travis Client, a command line utility for Travis CI (requires Ruby). This client provides many tools for monitoring and managing Travis CI jobs. Refer to [https://github.com/travis-ci/travis.rb#installation](https://github.com/travis-ci/travis.rb#installation) for more help with installing Travis CLI.
 
   ```
-  gem install travis -v 1.8.5 --no-rdoc --no-ri
+  gem install travis -v 1.8.6 --no-rdoc --no-ri
   ```
 
 #### Create a `.travis.yml` Configuration File
