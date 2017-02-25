@@ -94,18 +94,27 @@ To run unit tests, execute the test task: `gulp test`
 
 #### Install Heroku CLI
   Run these commands to install Heroku Command Line Interface. This will be used to create and deploy applications from the Ubuntu instance. Refer to [https://devcenter.heroku.com/articles/heroku-cli#download-and-install] (https://devcenter.heroku.com/articles/heroku-cli#download-and-install) for further information.
+  
+  Mac:
   ```
-  sudo add-apt-repository "deb https://cli-assets.heroku.com/branches/stable/apt ./"
-  curl -L https://cli-assets.heroku.com/apt/release.key | sudo apt-key add -
-  sudo apt-get update
-  sudo apt-get install heroku
+  brew install heroku
+  ```
+  
+  Ubuntu:
+```
+sudo add-apt-repository "deb https://cli-assets.heroku.com/branches/stable/apt ./"
+curl -L https://cli-assets.heroku.com/apt/release.key | sudo apt-key add -
+sudo apt-get update
+sudo apt-get install heroku
 ```
 
 #### Create a Heroku App
-    Run the following to create a heroku app through the Heroku CLI, where `app_name` is a unique name of your choosing. Further information on creating apps is available in the [official Heroku documentation](https://devcenter.heroku.com/articles/creating-apps).
-    ```bash
-    heroku create app_name
-    ```
+
+Run the following to create a heroku app through the Heroku CLI, where `app_name` is a unique name of your choosing. Further information on creating apps is available in the [official Heroku documentation](https://devcenter.heroku.com/articles/creating-apps).
+
+```
+heroku create app_name
+```
  If an `app_name` isn't specified, one will be generated. It will also output the url at which the application will be hosted.
 
 #### Configure Travis CI Deployment
@@ -157,28 +166,28 @@ To run unit tests, execute the test task: `gulp test`
 #### See it in Action
   Let's make a change to Dromedary and watch it make its way through the pipeline. Edit *lib/inMemoryStorage.js* and update `chartData` to add new color choices:
 
-  ```
-  var chartData = {
-    values: {
-      darkblue: {
-        label: 'DarkBlue',
-        value: 10,
-        color:'#000066',
-        highlight: '#6F6F6F'
-      },
-      red: {
-        label: 'Red',
-        value: 10,
-        color: '#CC0000',
-        highlight: '#C9DF6E'
-      },
-      yellow: {
-        label: 'Yellow',
-        value: 10,
-        color:'#FF9900',
-        highlight: '#FFB75E'
-      }
-    }
-  };
-    ```
+```
+var chartData = {
+values: {
+darkblue: {
+  label: 'DarkBlue',
+  value: 10,
+  color:'#000066',
+  highlight: '#6F6F6F'
+},
+red: {
+  label: 'Red',
+  value: 10,
+  color: '#CC0000',
+  highlight: '#C9DF6E'
+},
+yellow: {
+  label: 'Yellow',
+  value: 10,
+  color:'#FF9900',
+  highlight: '#FFB75E'
+}
+}
+};
+```
   Now commit and push the changes so Travis will build and deploy the update.
