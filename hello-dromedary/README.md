@@ -48,7 +48,7 @@ To start dromedary, simply run `gulp` in the project's root directory.
 
 You can access dromedary at [localhost:8080](http://localhost:8080)
 
-To supress output to the terminal you can run dromedary n the background with `nohup gulp &`
+To supress output to the terminal you can run dromedary in the background with `nohup gulp &`
 
 You can specify the port dromedary runs on with the following optional parameter `PORT=<port_number> gulp` to run on port 1337 simply enter `PORT=1337 gulp`
 
@@ -60,11 +60,11 @@ To run unit tests, execute the test task: `gulp test`
 ## 4. Integrate Travis CI
 
 #### Register for Travis CI
-  Travis CI is a continuous integration service that is free for open source GitHub repositories. If you don’t already have an account, go to [https://travis-ci.org/](https://travis-ci.org/) and register with your GitHub account. Travis CI will watch your GitHub repositories and can be configured to build/deploy your projects when they recieve new commits. After registering, head to travis-ci.org/profile and toggle on your fork of the Dromedary repository. If you don't see your repository, trying clicking "Sync Account"
+  Travis CI is a continuous integration service that is free for open source GitHub repositories. If you don’t already have an account, go to [https://travis-ci.org/](https://travis-ci.org/) and register with your GitHub account. Travis CI will watch your GitHub repositories and can be configured to build/deploy your projects when they receive new commits. After registering, head to travis-ci.org/profile and toggle your fork of the Dromedary repository to "on". If you don't see your repository, trying clicking "Sync Account"
 
 
 #### Install Travis CLI
-  The following will install Travis Client, a command line utility for Travis CI (requires Ruby, see Ch. 2). This client provides many tools for monitoring and managing Travis CI jobs. Refer to [https://github.com/travis-ci/travis.rb#installation](https://github.com/travis-ci/travis.rb#installation) for more help with installing Travis CLI.
+  The following will install Travis Client, a command line utility for Travis CI (requires Ruby). This client provides many tools for monitoring and managing Travis CI jobs. Refer to [https://github.com/travis-ci/travis.rb#installation](https://github.com/travis-ci/travis.rb#installation) for more help with installing Travis CLI.
 
   ```
   gem install travis -v 1.8.5 --no-rdoc --no-ri
