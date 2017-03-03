@@ -16,7 +16,7 @@ Create a fork of the [liatrio/dromedary repo](http://github.com/liatrio/dromedar
 
 #### Set up your environment
 **Java 1.8** must be installed on your machine to run DynamoDB locally. This is the database that our app relies upon. Java can be installed with homebrew, apt-get, or yum. *(note Ubuntu 14.04 requires the use of a ppa for java 1.8)*
-  
+
 Ensure that you have [Node JS](https://nodejs.org/en/download/) installed on your machine.
 
 Install Dependencies by running `npm install` in project's root directory.
@@ -77,7 +77,7 @@ To run unit tests, execute the test task: `gulp test`
   language: node_js
   node_js:
     - "7.2"
-  beforescript:
+  before_script:
     - npm install -g gulp
     - npm install
   script:
@@ -94,12 +94,12 @@ To run unit tests, execute the test task: `gulp test`
 
 #### Install Heroku CLI
   Run these commands to install Heroku Command Line Interface. This will be used to create and deploy applications from the Ubuntu instance. Refer to [https://devcenter.heroku.com/articles/heroku-cli#download-and-install] (https://devcenter.heroku.com/articles/heroku-cli#download-and-install) for further information.
-  
+
   Mac:
   ```
   brew install heroku
   ```
-  
+
   Ubuntu:
 ```
 sudo add-apt-repository "deb https://cli-assets.heroku.com/branches/stable/apt ./"
