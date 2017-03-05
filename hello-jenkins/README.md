@@ -6,7 +6,7 @@ Jenkins server.
 
 ###Overview
 1. Fork the repo.
-2. Set up job in Jenkins to connect to your repository and build C++ hell.cpp.
+2. Set up job in Jenkins to connect to your repository and build C++ hello.cpp.
 3. Set up build status badge.
 4. Set up second job to run the program after build completes.
 
