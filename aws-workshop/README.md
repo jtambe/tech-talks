@@ -38,7 +38,7 @@ this stack. The process should take roughly 5 minutes.
 
 2. Click on 'Add a New Skill' to begin creating your vary own skill! The name can be anything you like, but set the invocation name to `code deploy`. Make sure the radio button for `Custom Interaction Model` is selected.
 
-![Entering Skill information](/img1.png)
+![Entering Skill information](/aws-workshop/img1.png)
 
 3. Add the following snippet to your 'Intent Schema' section.
 
@@ -381,4 +381,4 @@ def on_session_ended(session_ended_request, session):
 
 8. With your skill done (or partly done) you can connect the two AWS resources. To do this locat the arn in the top right corner of the lamda dashboard for your specific lambda funtion. Copy this arn number into the Alexa Developer Console's configuration tab. make sure North America is checked, and save your skill. You should now be able to access it directly from the echo Dot you set by using the invocation name.
 
-![ASK configuration panel with ARN](/image2.png)
+![ASK configuration panel with ARN](/aws-workshop/image2.png)
