@@ -34,7 +34,7 @@ this stack. The process should take roughly 5 minutes.
   
 ### Setting up your Alexa Skill
 
-1. Access the [Amazon Developer Panel](https://developer.amazon.com/alexa) sign in to create a new skill. Select the 'Alexa' tab, and follow the 'Get Started' link for the Alexa Skills Kit
+1. Access the [Amazon Developer Panel](https://developer.amazon.com/alexa) and sign in to create a new skill. Select the 'Alexa' tab, and follow the 'Get Started' link for the Alexa Skills Kit
 
 2. Click on 'Add a New Skill' to begin creating your very own skill! The name can be anything you like, but set the invocation name to `code deploy`. Make sure the radio button for `Custom Interaction Model` is selected.
 
