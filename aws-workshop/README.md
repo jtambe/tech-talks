@@ -146,8 +146,10 @@ def get_pending_approval_actions():
         dict: { 'approval_action_id': Dict, 'token': String }
     """
     
-    # Take out the .get_pipeline
     for approval_action_id in get_approval_action_ids():
+        #
+        # TODO: Use the boto3 to get the pipeline state identified by `approval_action_id`
+        #
         pipeline_state = "wrongstate" #codepipeline.something
         stage_state = next(s for s in pipeline_state['stageStates'] if s['stageName'] == approval_action_id['stage'])
         action_state = next(a for a in stage_state['actionStates'] if a['actionName'] == approval_action_id['action'])
@@ -267,7 +269,9 @@ def enter_pin(intent, session):
         card_title = "Deploying.."
         speech_output = "Deploying" + pending[int(selection)]['approval_action_id']['pipeline']
         should_end_session = True
-        #TODO: send approval to CodePipeline
+        #
+        # TODO: Use a function provided in this script to approve the deployment  
+        #
     return build_response({}, build_speechlet_response(
         card_title, speech_output, None, should_end_session))
 
@@ -354,7 +358,9 @@ def on_intent(intent_request, session):
     if intent_name == "GetQueueIntent":
         return alexa_get_pending(intent, session)
     elif intent_name == "DeployIntent":    
-         #do something here
+         # 
+         # TODO: Call appropriate handler function (see handlers written above)
+         #
     elif intent_name == "EnterPinIntent":
         return enter_pin(intent, session)
     elif intent_name == "AMAZON.HelpIntent":
