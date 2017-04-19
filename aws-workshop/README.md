@@ -259,7 +259,7 @@ def deploy(intent, session):
 def enter_pin(intent, session):
     populate_pending_list()
     entered_pin = intent['slots']['Pin']['value']
-    selection = session['attributes']['Selection']['value']
+    selection = int(session['attributes']['Selection']['value'])
     if selection == 0:
         card_title = "No selection found"
         speech_output = "no selection made, try checking queued builds first"
