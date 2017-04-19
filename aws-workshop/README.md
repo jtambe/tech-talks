@@ -364,6 +364,7 @@ def on_intent(intent_request, session):
          # 
          # TODO: Call appropriate handler function (see handlers written above)
          #
+         pass
     elif intent_name == "EnterPinIntent":
         return enter_pin(intent, session)
     elif intent_name == "AMAZON.HelpIntent":
