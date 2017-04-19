@@ -381,4 +381,4 @@ def on_session_ended(session_ended_request, session):
 
 8. With your skill done (or partly done) you can connect the two AWS resources. To do this locat the arn in the top right corner of the lamda dashboard for your specific lambda funtion. Copy this arn number into the Alexa Developer Console's configuration tab. make sure North America is checked, and save your skill. You should now be able to access it directly from the echo Dot you set by using the invocation name.
 
-![ASK configuration panel with ARN](/aws-workshop/image2.png)
+![ASK configuration panel with ARN](/aws-workshop/img2.png)
